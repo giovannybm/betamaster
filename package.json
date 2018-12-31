@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "publish": "build -p always",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
@@ -26,6 +27,7 @@
     "@vue/cli-service": "^3.2.0",
     "babel-eslint": "^10.0.1",
     "electron": "^3.0.0",
+    "electron-updater": "^4.0.6",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
     "stylus": "^0.54.5",
