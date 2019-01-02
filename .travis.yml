@@ -1,5 +1,11 @@
 language: node_js
+os:
+  -linux
+  -windows
 node_js:
   - '11.3.0'
-after_success:
+script:
 - npm run electron:build
+deploy:
+  provider: releases
+  api_key: $GH_TOKEN
