@@ -9,13 +9,12 @@ module.exports = {
           category: "Development",
           target: [
             {
-                target: "AppImage",
-                arch:[
-                    "ia32",
-                    "x64",
-                    "armv7l"
-                ]            
-                
+              target: "AppImage",
+              arch:[
+                "ia32",
+                "x64",
+                "armv7l"
+              ]
             }
           ]
         },
@@ -27,8 +26,13 @@ module.exports = {
         },
         win: {
           target: [
-            "zip",
-            "nsis"
+            {
+              target: "nsis",
+              arch:[
+                "ia32",
+                "x64"
+              ]
+            }
           ]
         }
       }
