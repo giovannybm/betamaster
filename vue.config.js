@@ -4,11 +4,19 @@ module.exports = {
     electronBuilder: {
       builderOptions: {
         appId: "org.simulatedgreg.electron-vue",
+        artifactName: "${name}-${version}-${arch}.${ext}",
         linux: {
           category: "Development",
           target: [
-            "zip",
-            "AppImage"
+            {
+                target: "AppImage",
+                arch:[
+                    "ia32",
+                    "x64",
+                    "armv7l"
+                ]            
+                
+            }
           ]
         },
         mac: {
